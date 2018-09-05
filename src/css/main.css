@@ -1,11 +1,8 @@
 @font-face {
   font-family: "papafont";
-  src: url("../assets/fonts/Knockout-HTF69-FullLiteweight.otf") format("truetype");
+  src: url("assets/fonts/Knockout-HTF69-FullLiteweight.otf") format("truetype");
 }
-@font-face {
-  font-family: "papafont";
-  src: url("../assets/fonts/Knockout-HTF69-FullLiteweight.otf") format("truetype");
-}
+
 .headerbox {
   text-align: center;
 }
