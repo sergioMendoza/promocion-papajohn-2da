@@ -17,7 +17,7 @@
   background-color: #BB141A;
   color: white;
   font-size: 29px;
-  font-family: papafont;
+  font-family: papafont, sans-serif;
   text-transform: uppercase;
 }
 .big-pizza-section__title .big-pizza-section__image {
@@ -33,7 +33,7 @@
   font-size: 22px;
   font-weight: 500;
   color: #807673;
-  font-family: "papafont";
+  font-family: "papafont", sans-serif;
   text-transform: uppercase;
 }
 
@@ -44,7 +44,7 @@
   font-size: 22px;
   font-weight: 500;
   color: #807673;
-  font-family: "papafont";
+  font-family: "papafont", sans-serif;
   text-transform: uppercase;
 }
 .pizza .pizza__button {
@@ -68,8 +68,21 @@
 .pizza .pizza--height-detail {
   height: 85px;
 }
+@media (max-width: 340px) {
+  .pizza .pizza--height-detail {
+    height: 100px;
+  }
+}
 .pizza .pizza--height-detail2 {
-  height: 95px;
+  height: 100px;
+}
+@media (max-width: 340px) {
+  .pizza .pizza--height-detail2 {
+    height: 135px;
+  }
+}
+.pizza .pizza--height-detail3 {
+  height: 50px;
 }
 
 .pizza--hide {
@@ -107,6 +120,12 @@ input[type=radio]:checked + label::before {
   border: 2px solid #009774;
   border-radius: 18px;
   z-index: -1;
+}
+@media (max-width: 340px) {
+  .pizza-count {
+    padding-right: 5px;
+    padding-left: 26px;
+  }
 }
 
 .confirm {

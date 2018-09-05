@@ -6,7 +6,7 @@
     font-size: 22px;
     font-weight: 500;
     color: $darkgrey-papa;
-    font-family: "papafont";
+    font-family: "papafont" , sans-serif;
     text-transform: uppercase;
   }
 }
@@ -18,7 +18,7 @@
     font-size: 22px;
     font-weight: 500;
     color: $darkgrey-papa;
-    font-family: "papafont";
+    font-family: "papafont" , sans-serif;
     text-transform: uppercase;
   }
 
@@ -44,21 +44,26 @@
   }
 
   .pizza--height-detail {
-    height: 85px
+    height: 85px;
+    @media (max-width: 340px) {
+      height: 100px;
+    }
   }
 
   .pizza--height-detail2 {
-    height: 95px
+    height: 100px;
+    @media (max-width: 340px) {
+      height: 135px;
+    }
   }
- 
-  
+  .pizza--height-detail3 {
+    height: 50px;
+  }
 }
 
-.pizza--hide{
-  display:none;
+.pizza--hide {
+  display: none;
 }
-
-
 
 input[type="radio"] {
   position: absolute;
@@ -79,6 +84,7 @@ input[type="radio"]:checked+label::before {
   line-height: 36px;
   cursor: pointer;
   font-size: 14px;
+  
 
   &::before {
     content: " ";
@@ -92,10 +98,16 @@ input[type="radio"]:checked+label::before {
     border-radius: 18px;
     z-index: -1;
   }
+  @media (max-width: 340px) {
+    padding-right: 5px;
+    padding-left: 26px;
+  }
+
 }
 
 .confirm {
   text-align: center;
+
   .confirm__btn-confirm-pizza {
     background-color: $green-papa;
     width: 100%;
@@ -104,7 +116,8 @@ input[type="radio"]:checked+label::before {
     font-size: 20px;
     border: none;
   }
-  .confirm__text-aler{
+
+  .confirm__text-aler {
     color: $darkred-papa;
     font-weight: 700;
   }
