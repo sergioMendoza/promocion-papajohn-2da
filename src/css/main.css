@@ -1,8 +1,11 @@
 @font-face {
   font-family: "papafont";
-  src: url("assets/fonts/Knockout-HTF69-FullLiteweight.otf") format("truetype");
+  src: url("../assets/fonts/Knockout-HTF69-FullLiteweight.otf") format("truetype");
 }
-
+@font-face {
+  font-family: "papafont";
+  src: url("../assets/fonts/Knockout-HTF69-FullLiteweight.otf") format("truetype");
+}
 .headerbox {
   text-align: center;
 }
@@ -54,6 +57,10 @@
   width: 35px;
   font-size: 18px;
   border-radius: 8px;
+  outline: none;
+}
+.pizza .pizza__button:focus {
+  outline: none;
 }
 .pizza .pizza--font14 {
   font-size: 12px;
@@ -135,6 +142,10 @@ input[type=radio]:checked + label::before {
   text-transform: uppercase;
   font-size: 20px;
   border: none;
+  outline: none;
+}
+.confirm .confirm__btn-confirm-pizza:focus {
+  outline: none;
 }
 .confirm .confirm__text-aler {
   color: #BB141A;
@@ -143,6 +154,10 @@ input[type=radio]:checked + label::before {
 
 .btn-active {
   background-color: #009774 !important;
+  outline: none;
+}
+.btn-active:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=main.css.map */
